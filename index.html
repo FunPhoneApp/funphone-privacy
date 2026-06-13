@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunPhone — Política de Privacidad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #FFF3E4;
+            color: #1E3A5F;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #1E3A5F;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #5BB8F5;
+            font-size: 36px;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            color: #8B9BB4;
+            font-size: 16px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px;
+            background-color: #FFF3E4;
+        }
+
+        .lang-switch button {
+            padding: 8px 24px;
+            border: 2px solid #5BB8F5;
+            border-radius: 20px;
+            background: white;
+            color: #1E3A5F;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lang-switch button.active {
+            background-color: #5BB8F5;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #F4845F;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #F4A97F;
+        }
+
+        p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 8px 0 12px 24px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .highlight {
+            background-color: #E8F4FD;
+            border-left: 4px solid #5BB8F5;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-weight: bold;
+        }
+
+        .date {
+            color: #8B9BB4;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        footer {
+            background-color: #1E3A5F;
+            color: #8B9BB4;
+            text-align: center;
+            padding: 24px;
+            font-size: 13px;
+            margin-top: 48px;
+        }
+
+        footer span {
+            color: #5BB8F5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FunPhone</h1>
+    <p>Política de Privacidad / Privacy Policy</p>
+</header>
+
+<div class="lang-switch">
+    <button class="active" onclick="setLang('es')">🇪🇸 Español</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<!-- ESPAÑOL -->
+<div id="lang-es" class="lang-content active">
+    <div class="container">
+        <p class="date">Última actualización: junio 2025</p>
+
+        <h2>1. Introducción</h2>
+        <p>FunPhone es una aplicación de control parental diseñada para que los adultos puedan dejar su dispositivo móvil a los niños de forma segura y controlada. Esta política de privacidad explica cómo tratamos la información en nuestra aplicación.</p>
+
+        <h2>2. Datos que recoge FunPhone</h2>
+        <div class="highlight">FunPhone NO recoge, almacena ni transmite ningún dato personal a servidores externos. Toda la información se guarda exclusivamente en el dispositivo del usuario.</div>
+        <p>Los únicos datos que se almacenan localmente en el dispositivo son:</p>
+        <ul>
+            <li>El PIN de acceso para adultos (guardado localmente, nunca enviado a ningún servidor)</li>
+            <li>La pregunta y respuesta de seguridad (guardadas localmente)</li>
+            <li>La lista de aplicaciones permitidas para el modo niño (guardada localmente)</li>
+            <li>Los perfiles de hijos y sus configuraciones (guardados localmente)</li>
+            <li>El límite de tiempo configurado (guardado localmente)</li>
+        </ul>
+
+        <h2>3. Datos que NO recoge FunPhone</h2>
+        <p>FunPhone NO recoge ni transmite:</p>
+        <ul>
+            <li>Datos personales de ningún tipo</li>
+            <li>Información de ubicación</li>
+            <li>Contactos del dispositivo</li>
+            <li>Fotos o archivos del dispositivo</li>
+            <li>Historial de navegación</li>
+            <li>Información sobre los niños usuarios de la app</li>
+            <li>Datos de uso o analíticas</li>
+        </ul>
+
+        <h2>4. Permisos que solicita FunPhone</h2>
+        <p>FunPhone solicita los siguientes permisos del sistema únicamente para su correcto funcionamiento:</p>
+        <ul>
+            <li><strong>QUERY_ALL_PACKAGES</strong> — Para mostrar la lista de aplicaciones instaladas en el dispositivo y permitir al adulto elegir cuáles son accesibles para el niño. Esta información nunca sale del dispositivo.</li>
+            <li><strong>ACCESS_NOTIFICATION_POLICY</strong> — Para poder silenciar las notificaciones durante el modo niño, evitando que el niño acceda a contenido no deseado a través de ellas. Solo se activa cuando el adulto da su permiso explícitamente.</li>
+            <li><strong>USE_BIOMETRIC / USE_FINGERPRINT</strong> — Reservados para futuras funciones de autenticación biométrica. Actualmente no se utilizan.</li>
+        </ul>
+
+        <h2>5. Menores de edad</h2>
+        <p>FunPhone es una aplicación diseñada para ser usada por adultos con el objetivo de proteger a los menores. La app no recoge ningún dato de los niños que usan el dispositivo en modo niño. No recopilamos intencionadamente información de menores de 13 años.</p>
+
+        <h2>6. Compras dentro de la aplicación</h2>
+        <p>FunPhone ofrece una versión Premium mediante compras dentro de la aplicación gestionadas por Google Play. Estas transacciones son procesadas exclusivamente por Google y se rigen por la política de privacidad de Google Play. FunPhone no tiene acceso a los datos de pago del usuario en ningún momento.</p>
+
+        <h2>7. Seguridad de los datos</h2>
+        <p>Dado que todos los datos se almacenan localmente en el dispositivo del usuario, la seguridad de dichos datos depende de las medidas de seguridad del propio dispositivo. Recomendamos mantener el dispositivo protegido con una contraseña o patrón de desbloqueo.</p>
+
+        <h2>8. Eliminación de datos</h2>
+        <p>Todos los datos almacenados por FunPhone se eliminan automáticamente al desinstalar la aplicación del dispositivo. No es necesario contactar con nosotros para eliminar ningún dato.</p>
+
+        <h2>9. Cambios en esta política</h2>
+        <p>Podemos actualizar esta política de privacidad ocasionalmente. Notificaremos cualquier cambio significativo a través de una actualización de la app en Google Play. Te recomendamos revisar esta política periódicamente.</p>
+
+        <h2>10. Contacto</h2>
+        <p>Si tienes alguna pregunta sobre esta política de privacidad puedes contactarnos a través de la página de la app en Google Play.</p>
+    </div>
+</div>
+
+<!-- ENGLISH -->
+<div id="lang-en" class="lang-content">
+    <div class="container">
+        <p class="date">Last updated: June 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>FunPhone is a parental control application designed to allow adults to safely and securely give their mobile device to children. This privacy policy explains how we handle information in our application.</p>
+
+        <h2>2. Data collected by FunPhone</h2>
+        <div class="highlight">FunPhone does NOT collect, store or transmit any personal data to external servers. All information is stored exclusively on the user's device.</div>
+        <p>The only data stored locally on the device is:</p>
+        <ul>
+            <li>The adult access PIN (stored locally, never sent to any server)</li>
+            <li>The security question and answer (stored locally)</li>
+            <li>The list of allowed apps for kid mode (stored locally)</li>
+            <li>Child profiles and their settings (stored locally)</li>
+            <li>The configured time limit (stored locally)</li>
+        </ul>
+
+        <h2>3. Data FunPhone does NOT collect</h2>
+        <p>FunPhone does NOT collect or transmit:</p>
+        <ul>
+            <li>Personal data of any kind</li>
+            <li>Location information</li>
+            <li>Device contacts</li>
+            <li>Photos or device files</li>
+            <li>Browsing history</li>
+            <li>Information about child users of the app</li>
+            <li>Usage data or analytics</li>
+        </ul>
+
+        <h2>4. Permissions requested by FunPhone</h2>
+        <p>FunPhone requests the following system permissions solely for its proper functioning:</p>
+        <ul>
+            <li><strong>QUERY_ALL_PACKAGES</strong> — To display the list of applications installed on the device and allow the adult to choose which ones are accessible to the child. This information never leaves the device.</li>
+            <li><strong>ACCESS_NOTIFICATION_POLICY</strong> — To silence notifications during kid mode, preventing the child from accessing unwanted content through them. Only activated when the adult explicitly grants permission.</li>
+            <li><strong>USE_BIOMETRIC / USE_FINGERPRINT</strong> — Reserved for future biometric authentication features. Currently not in use.</li>
+        </ul>
+
+        <h2>5. Minors</h2>
+        <p>FunPhone is an application designed to be used by adults with the goal of protecting minors. The app does not collect any data from children who use the device in kid mode. We do not intentionally collect information from children under 13 years of age.</p>
+
+        <h2>6. In-app purchases</h2>
+        <p>FunPhone offers a Premium version through in-app purchases managed by Google Play. These transactions are processed exclusively by Google and are governed by Google Play's privacy policy. FunPhone does not have access to the user's payment data at any time.</p>
+
+        <h2>7. Data security</h2>
+        <p>Since all data is stored locally on the user's device, the security of that data depends on the device's own security measures. We recommend keeping the device protected with a password or unlock pattern.</p>
+
+        <h2>8. Data deletion</h2>
+        <p>All data stored by FunPhone is automatically deleted when the application is uninstalled from the device. There is no need to contact us to delete any data.</p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>We may update this privacy policy occasionally. We will notify you of any significant changes through an app update on Google Play. We recommend reviewing this policy periodically.</p>
+
+        <h2>10. Contact</h2>
+        <p>If you have any questions about this privacy policy you can contact us through the app page on Google Play.</p>
+    </div>
+</div>
+
+<footer>
+    <p><span>FunPhone</span> &copy; 2025 — Todos los derechos reservados / All rights reserved</p>
+</footer>
+
+<script>
+    function setLang(lang) {
+        document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-switch button').forEach(el => el.classList.remove('active'));
+        document.getElementById('lang-' + lang).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
